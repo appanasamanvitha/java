@@ -1,0 +1,10 @@
+import java.io.*;
+class Binaryandlargevalues{
+	public static void main(String args[]){
+		char ch = 0b1011;
+		double d = 1__23_45.123;
+		//double e = 1_2_3__.789;
+		//char f = '0face';
+		System.out.println(ch + " " + d + " " );
+	}
+}
