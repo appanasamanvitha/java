@@ -1,0 +1,11 @@
+import java.io.*;
+class Charliterals{
+	public static void main(String args[]){
+		char ch = 0xface;
+		char a = 0777;
+		char b = 65535;
+		char c = '\n';
+		char d = '\u0061';
+		System.out.println(ch + " " + a + " " + b + " " + c + " " + d + "hi");
+	}
+}
