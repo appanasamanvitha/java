@@ -1,0 +1,9 @@
+import java.io.*;
+class Floatliterals{
+	public static void main(String args[]){
+		//float f = 123.456;[incompatible types: possible lossy conversion from double to float]
+		float e = 123.456f;
+		double d = 123.456;
+		System.out.println(e + " " + d);
+	}
+}
