@@ -1,0 +1,9 @@
+import java.io.*;
+class Intliterals{
+	public static void main(String args[]){
+		int x = 10L;
+		long l = 10L;
+		long y = 10;
+		System.out.println(x + " " + l + " " + y);
+	}
+}
