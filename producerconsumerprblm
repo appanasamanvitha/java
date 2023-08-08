@@ -74,3 +74,16 @@ class ProducerConsumer{
 		new Consumer(itemQueue);
 	}
 }
+
+
+op:
+
+Produced: 0
+Consummed:0
+Produced: 1
+Consummed:1
+Produced: 2
+Consummed:2
+Produced: 3
+Consummed:3
+
