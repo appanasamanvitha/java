@@ -1,0 +1,54 @@
+import java.util.Scanner;
+
+abstract class Shape {
+    protected int length;
+    protected int width;
+
+    public abstract void printArea();
+}
+
+class Rectangle extends Shape {
+    public void printArea() {
+        int area = length * width;
+        System.out.println("Area of the Rectangle: " + area);
+    }
+}
+
+class Triangle extends Shape {
+    public void printArea() {
+        int area = (length * width) / 2;
+        System.out.println("Area of the Triangle: " + area);
+    }
+}
+
+class Circle extends Shape {
+    public void printArea() {
+        double area = 3.14 * length * length;
+        System.out.println("Area of the Circle: " + area);
+    }
+}
+
+public class Abstract{
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter the dimensions of the Rectangle (length and width):");
+        Rectangle rectangle = new Rectangle();
+        rectangle.length = scanner.nextInt();
+        rectangle.width = scanner.nextInt();
+        rectangle.printArea();
+
+        System.out.println("Enter the dimensions of the Triangle (base and height):");
+        Triangle triangle = new Triangle();
+        triangle.length = scanner.nextInt();
+        triangle.width = scanner.nextInt();
+        triangle.printArea();
+
+        System.out.println("Enter the radius of the Circle:");
+        Circle circle = new Circle();
+        circle.length = scanner.nextInt();
+        circle.printArea();
+
+        scanner.close();
+    }
+}
